@@ -604,7 +604,6 @@ body {
 }
 
 .headlinerIMG {
-  width: 314px;
   max-width: 415px;
 }
 
@@ -782,7 +781,6 @@ body {
   margin-left: 0.2em;
   margin-right: 0.2em;
   background-color: #7a78a1;
-  width: 314px;
   max-width: 415px;
   box-shadow: 1px 1px 4px #222;
 }
