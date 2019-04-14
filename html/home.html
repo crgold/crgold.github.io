@@ -70,53 +70,33 @@
     <main role="main">
         <!-- Latest Matches -->
         <section class="matches">
-            <h1>Latest Matches</h1>
-            <section>
-                <img alt="Bren E-Sports Logo" src="../images/Bren-Esports-300x300.png"> WIN 
-                VS
-                <img alt="GeekFam Logo" src="../images/GeekFam.png"> LOSS
-            </section>
-
-            <section>
-                <img alt="Bren XPAX Logo" src="../images/XPAX-X-ASSINS.png"> WIN 
-                VS
-                <img alt="Reborn Logo" src="../images/Reborn-logo.png"> LOSS
-            </section>
-
-            <section>
-                <img alt="Bren E-Sports Logo" src="../images/Bren-Esports-300x300.png"> WIN 
-                VS
-                <img alt="GeekFam Logo" src="../images/GeekFam.png"> LOSS
-            </section>
-
-            <section>
-                <img alt="Bren XPAX Logo" src="../images/XPAX-X-ASSINS.png"> WIN 
-                VS
-                <img alt="Reborn Logo" src="../images/Reborn-logo.png"> LOSS
+            <h1 class="line">Latest Matches</h1>
+            <section class="resultOne">
+                <img class="teamLogo" alt="Bren E-Sports Logo" src="../images/slider1.png"> 
             </section>
         </section>
 
         <!-- News & Hero Guide Section -->
         <section>
             <!-- News Section -->
-            <section>
-                <h1>eSports News</h1>
+            <section class="newsSection">
+                <h1 class="newsLine">eSports News</h1>
                 <!-- row 1 -->
-                <article>
+                <section class="headliner">
                     <header>
                         <a href="#">
-                            <img alt="Aether team speaking about victory" src="../images/mpl-final-day-1-banner.jpg">
+                            <img class="headlinerIMG" alt="Aether team speaking about victory" src="../images/mpl-final-day-1-banner.jpg">
                         </a>
                         <a href="#">
-                            <h2>THE MPL PH SEASON 2 GRAND FINALS IS HEATING UP</h2>
+                            <h2 class="headlinerTxt">THE SEASON 2 GRAND FINALS ARE HEATING UP</h2>
                         </a>
-                        <h4><em>By Anon 04/02/2019</em></h4>
+                        <h4 class="headlinerTxt"><em>By Anon 04/02/2019</em></h4>
                     </header>
-                    <p>The weeks-long group stage of the Mobile Legends: Bang Bang Professional League Philippines Season 2 led up to this moment in time where eight of the Philippines’ strongest ML:BB teams will clash in a true tournament of legends.</p>
-                </article>
+                    <p class="headlinerTxt">The weeks-long group stage of the Mobile Legends: Bang Bang Professional League Philippines Season 2 led up to this moment in time where eight of the Philippines’ strongest ML:BB teams will clash in a true tournament of legends.</p>
+                </section>
 
                 <!-- row 2 -->
-                <article>
+                <section class="subHeadliner1">
                     <header>
                         <a href="#">
                             <img alt="Aether team speaking about victory" src="../images/MPL_S3.original.png">
@@ -127,9 +107,9 @@
                         <h4><em>By Anon 04/02/2019</em></h4>
                     </header>
                     <p>The official Mobile Legends professional league for Malaysian and Singaporean players is back for our third season.</p>
-                </article>
+                </section>
 
-                <article>
+                <section class="subHeadliner2">
                     <header>
                         <a href="#">
                             <img alt="Aether team speaking about victory" src="../images/MPL-Season-2-Logo.png">
@@ -140,16 +120,17 @@
                         <h4><em>By Anon 04/02/2019</em></h4>
                     </header>
                     <p>Oh my goodness, the final day of the Playoffs was just…crazy. There were so many upsets and crazy games!</p>
-                </article>
+                </section>
             </section>
 
             <!-- Hero Guides Tool-->
-            <section>
-                <h1>Hero Guides</h1>
-
+            <section class="heroGuides">
+                <h1 class="guideLine">Hero Guides</h1>
                 <!-- Row 1 -->
-                <section>
-                    <h1>Class: Support</h1>
+                <section class="heroTitlebar">
+                    <h2>Class: Support</h2>
+                </section>
+                <section class="heroSelector">
                     <select name="heroSelection">
                         <option value="Tank">Tank</option>
                         <option value="fighter">Fighter</option>
@@ -160,53 +141,55 @@
                     </select>
                 </section>
 
-                <section>
-                    <!-- Row 2 -->
-                    <a href="">
-                        <img alt="Angela" src="../images/angela.png"> Angela
-                    </a>
+                <section class="guideSelection">
+                    <section class="innerGuideSelection">
+                        <!-- Row 2 -->
+                        <a href="">
+                            <img alt="Angela" src="../images/angela.png"><p>Angela</p>
+                        </a>
 
-                    <a href="">
-                        <img alt="Diggie" src="../images/diggie.png"> Diggie
-                    </a>
+                        <a href="">
+                            <img alt="Diggie" src="../images/diggie.png"><p>Diggie</p>
+                        </a>
 
-                    <a href="">
-                        <img alt="Estes" src="../images/Estes.png"> Estes
-                    </a>
+                        <a href="">
+                            <img alt="Estes" src="../images/Estes.png"><p>Estes</p>
+                        </a>
 
-                    <a href="">
-                        <img alt="Kaja" src="../images/Kaja.png"> Kaja
-                    </a>
+                        <a href="">
+                            <img alt="Kaja" src="../images/Kaja.png"><p>Kaja</p>
+                        </a>
 
-                    <!-- Row 3 -->
-                    <a href="">
-                        <img alt="Rafaela" src="../images/Rafaela.png"> Rafaela
-                    </a>
+                        <!-- Row 3 -->
+                        <a href="">
+                            <img alt="Rafaela" src="../images/Rafaela.png"><p>Rafaela</p>
+                        </a>
+                    </section>
                 </section>
             </section>
         </section>
 
         <!-- Game Updates Section -->
-        <section>
-            <h1>Game Updates</h1>
+        <section class="gameUpdates">
+            <h1 class="updateLine">Game Updates</h1>
             <!-- Row 1 -->
-            <article>
+            <section class="newsItem">
                 <!-- col1 6 -->
                 <a href="#">
-                    <img alt="Team Composition Guide" src="../images/news1.jpg">
+                    <img class="newsIMG" alt="Team Composition Guide" src="../images/news1.jpg">
                 </a>
                 <!-- col2 6-->
                 <a href="#"><h2>Team Composition Guide</h2></a>
                 <p>This doesn't apply much in very low elo as people have lower hero pool, also you cannot see your opponent picks in classic/pre draft tiers. But if you're entering Epic you should be able to fill team...</p>
                 <h4><em>BY /U/PINKPUGITA</em></h4>
                 <h5><em>JANUARY 4, 2019</em></h5>
-            </article>
+            </section>
 
             <!-- Row 2 -->
-            <article>
+            <section class="newsItem">
                 <!-- col1 6 -->
                 <a href="#">
-                    <img alt="Patch Notes 1.3.36" src="../images/pn.jpg">
+                    <img class="newsIMG" alt="Patch Notes 1.3.36" src="../images/pn.jpg">
                 </a>
                 <!-- col2 6-->
                 <a href="#">
@@ -215,20 +198,20 @@
                 <p>Christmas is coming! To celebrate it, we prepared many interesting game-plays and events for you. Merry Christmas to everyone! In this update, we revamped the map [The Celestial Palace] and the...</p>
                 <h4><em>BY EXPERTWM.COM</em></h4>
                 <h5><em>DECEMBER 18, 2018</em></h5>
-            </article>
+            </section>
 
             <!-- Row 3 -->
             <!-- AdWords Section -->
-            <section>
+            <section class="googleContainer">
                 <a href="#">
-                    <img alt="Google AdSense" src="../images/Google-Ads-300x135.png">
+                    <img class="googleAds" alt="Google AdSense" src="../images/Google-Ads-300x135.png">
                 </a>
             </section>
             <!-- Row 4 -->
-            <article>
+            <section class="newsItem">
                 <!-- col1 6 -->
                 <a href="#">
-                    <img alt="Anti Meta Hilda Guide" src="../images/anti-meta-hilda-guide.jpg">
+                    <img class="newsIMG" alt="Anti Meta Hilda Guide" src="../images/anti-meta-hilda-guide.jpg">
                 </a>
 
                 <!-- col2 6-->
@@ -238,13 +221,13 @@
                 <p>So, we all know no one's using Hilda in ranked anymore, and there's even no one who has her Mentor Program skin (Please Moonton how the hell can I get that skin now?) With her recent buffs I've used...</p>
                 <h4><em>/U/KAYLANKONNOR</em></h4>
                 <h5><em>DECEMBER 12, 2018</em></h5>
-            </article>
+            </section>
 
             <!-- Row 5 -->
-            <article>
+            <section class="newsItem">
                 <!-- col1 6 -->
                 <a href="#">
-                    <img alt="Patch Notes 1.3.30" src="../images/patch-notes-1.3.30.jpg">
+                    <img class="newsIMG" alt="Patch Notes 1.3.30" src="../images/patch-notes-1.3.30.jpg">
                 </a>
 
                 <!-- col2 6 -->
@@ -254,13 +237,13 @@
                 <p>Minsitthar Courageous Warrior Diamonds 599. BP 32.000. Launch Week 30% Diamond Discount. Available to the whole Official Server from 20th, November. Hero Specialty:...</p>
                 <h4><em>BY EXPERTWM.COM</em></h4>
                 <h5><em>NOVEMBER 20, 2018</em></h5>
-            </article>
+            </section>
         </section>
     </main>   
-    <img alt="Image of the hero Harith" src="../images/harith.png">
+    <img class="harithIMG" alt="Image of the hero Harith" src="../images/harith.png">
     <footer role="contentinfo">
         <!--col1 8-->
-        <h4>COPYRIGHT &copy; 2019 - LEGENDS - <a href="mailto:CRGOLD@ASU.EDU ">CRGOLD@ASU.EDU</a> ALL RIGHTS RESERVED. IMAGES FROM MOBILE LEGENDS. FOR EDUCATIONAL PURPOSES ONLY.</h4>
+        <h4>COPYRIGHT &copy; 2019 - LEGENDS - <a href="mailto:CRGOLD@ASU.EDU ">CRGOLD@ASU.EDU</a></h4> <h4>FOR EDUCATIONAL PURPOSES ONLY.</h4>
         <!-- col2 4-->
         <a href="# ">TERMS AND CONDITIONS</a> -
         <a href="# ">PRIVACY POLICY</a>
