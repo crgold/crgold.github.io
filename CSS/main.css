@@ -1,3 +1,5 @@
+/* Christopher Gold */
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -363,6 +365,13 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #FFF;
+  font-weight: normal;
+}
+
 h4 {
   margin: 0;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -396,6 +405,48 @@ ul li a {
 
 img {
   max-width: 26.563em;
+}
+
+.row-one {
+  grid-row: 1;
+}
+
+.row-two {
+  grid-row: 2;
+}
+
+.row-three {
+  grid-row: 3;
+}
+
+.row-four {
+  grid-row: 4;
+}
+
+.col-one {
+  grid-column: 1;
+}
+
+.col-two {
+  grid-column: 2;
+}
+
+.col-three {
+  grid-column: 3;
+}
+
+.col-four {
+  grid-column: 4;
+}
+
+.col-one-two {
+  grid-column-start: 1;
+  grid-column-end: 2 span;
+}
+
+.col-three-four {
+  grid-column-start: 3;
+  grid-column-end: 4 span;
 }
 
 html {
@@ -537,12 +588,11 @@ body {
 
 .resultOne {
   margin-top: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
   grid-row: 2;
   grid-column: 1;
   background-color: #7a78a1;
-  border: 0.063em solid #7a78a1;
   box-shadow: 1px 1px 4px #222;
 }
 
@@ -604,7 +654,7 @@ body {
 }
 
 .headlinerIMG {
-  max-width: 415px;
+  max-width: 100%;
 }
 
 .headlinerTxt {
@@ -772,7 +822,7 @@ body {
 }
 
 .newsIMG{
-  max-width: 415px;
+  max-width: 100%;
 }
 
 .newsItem {
@@ -796,11 +846,7 @@ body {
 }
 
 .harithIMG {
-  position: absolute;
-  left: 0;
-  right: 260px;
-  top: 3035px;
-  margin: 0 auto;
+  grid-column: 2;
   width: 10em;
   z-index: 0;
 }
@@ -814,4 +860,214 @@ footer {
 
 footer a {
   color: #4e5d9f;
+}
+
+
+/* Recharge Page Start */
+
+.rechargeMain {
+  padding-top: 2em;
+  background-color: #38416e;
+}
+.userIDGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #4e5d9f;
+  box-shadow: 1px 1px 4px #222;
+}
+
+.rechargeHeader {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 4 span;
+}
+
+.numIMG {
+  position: relative;
+  bottom: 2em;
+  width: 3em;
+}
+
+.diamondIMG {
+  position: relative;
+  left:1.4em;
+  bottom: 2em;
+  width:3em;
+}
+
+.userLabel {
+  position: relative;
+  right: 0.5em;
+}
+
+.userIDInputs {
+  position: relative;
+  bottom: 0.5em;
+  grid-row: 2;
+  grid-column-start: 1;
+  grid-column-end: 4 span;
+}
+
+.selectRecharge {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #4e5d9f;
+  box-shadow: 1px 1px 4px #222;
+}
+
+.numIMGTwo {
+  position: relative;
+  bottom: 2em;
+  right: 4.4em;
+  width: 3em;
+}
+
+.rechargeLabel {
+  position: relative;
+  left: 2em;
+  bottom: 2em;
+}
+
+.btnGrpOne {
+  position: relative;
+  bottom: 1.5em;
+}
+
+.btnGrpTwo {
+  position: relative;
+  bottom: 1.5em;
+}
+
+.btn {
+  background-color: #38416e;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #FFF;
+  margin-bottom: 0.5em;
+  padding: 0.3em;
+  width:9em;
+  box-shadow: 1px 1px 4px #222;
+}
+
+.selectPayment {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #4e5d9f;
+  box-shadow: 1px 1px 4px #222;
+}
+
+.numIMGThree {
+  position: relative;
+  bottom: 1.8em;
+  right: 10.2em;
+  width: 3em;
+}
+
+.paymentLabel {
+  position: relative;
+  right: 2em;
+  bottom: 2em;
+}
+
+.paymentBtnGroup {
+position: relative;
+bottom: 1em;
+}
+
+.paymentBtn {
+  background-color: #38416e;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #FFF;
+  padding: 0.3em;
+  width: 7em;
+  box-shadow: 1px 1px 4px #222;
+}
+
+.enterEmail {
+  margin-top: 2em;
+  margin-bottom: -7.6em;
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #4e5d9f;
+  box-shadow: 1px 1px 4px #222;
+}
+
+.numIMGFour {
+  position: relative;
+  bottom: 1.8em;
+  right: 10.2em;
+  width: 3em;
+  z-index: 1;
+}
+
+.emailLabel {
+  position: relative;
+  right: 4.3em;
+  bottom: 2em;
+  z-index: 1;
+}
+
+.emailInput {
+  position: relative;
+  bottom: 1.5em;
+  background-color: #38416e;
+  font-family: 'Open Sans Condensed', sans-serif;
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  color: #FFF;
+}
+
+.buyBtn {
+  position: relative;
+  bottom: 0.5em;
+  margin: 0 auto;
+  background-color: #38416e;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #FFF;
+  width: 7em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  box-shadow: 1px 1px 4px #222;
+}
+
+.rechargeHarith {
+  position: relative;
+  width:10em;
+  right: 8em;
+  bottom: 6.5em;
+  z-index: 0;
+}
+/*Recharge End */
+
+/* About Us Start */
+
+.aboutMain {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #38416e;
+  box-shadow: 1px 1px 4px #222;
+}
+
+.aboutContainer {
+  margin-top: 1em;
+  padding-top: 8em;
+  background-color: #4e5d9f;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  box-shadow: 1px 1px 4px #222;
+}
+
+.aboutLogo {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 4em;
+}
+
+.aboutSubTxt {
+  margin-top: 3em;
+}
+
+.aboutHarith {
+  background-color: #38416e;
 }
