@@ -1,3 +1,4 @@
+<!-- Christopher Gold -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +8,10 @@
     <meta name="author" content="Christopher Gold">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legends - Recharge</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    <script src = "../java/modernizr-custom.js" type = "text/javascript"></script>
 </head>
 
 <body>
@@ -27,6 +31,10 @@
                 <a href="#">
                     <img class="profile" title="Profile Picture" id="img_profile" alt="profile picture" src="../images/profile.jpg">
                 </a>
+
+                <section class="login">
+                    <a href="#">Login</a><span class="menuDivider">|</span><a href="#">Register</a>
+                </section>
         
                 <!-- Mobile Menu -->
                 <input type="checkbox" id="nav-toggle">
@@ -34,7 +42,7 @@
                     <img class="mobile-menu" src="../images/menu.png" alt="mobile menu">
                 </label>
                 <ul class="menu">
-                    <li><a title="Home" href="#">Home</a></li>
+                    <li><a title="Home" href="home.html">Home</a></li>
                     <li><a title="About Us" href="about.html">About Us</a></li>
                     <li>
                         <a title="Shop" href="#">Shop</a>
@@ -60,6 +68,33 @@
                     <li><a title="Login" href="#">Login</a> | <a title="Register" href="#">Register</a></li>
                 </ul>
             <!-- End Mobile Menu -->
+            
+            <!-- Regular Menu -->
+                <ul class="menuNormal">
+                    <li><a title="Home" href="home.html">Home</a><span class="menuDivider">|</span></li>
+                    <li><a title="About Us" href="about.html">About Us</a><span class="menuDivider">|</span></li>
+                    <li>
+                        <a title="Shop" href="#">Shop</a><span class="menuDivider">|</span>
+                        <ul>
+                            <li><a title="Diamonds" href="#">Diamonds</a></li>
+                            <li><a title="Subscriptions" href="#">Subscriptions</a></li>
+                            <li><a title="Skins" href="#">Skins</a></li>
+                        </ul>
+                    </li>
+                    <li><a title="News" href="#">News</a><span class="menuDivider">|</span></li>
+                    <li>
+                        <a title="Guides" href="#">Guides</a><span class="menuDivider">|</span>
+                        <ul>
+                            <li><a title="Tanks" href="#">Tanks</a></li>
+                            <li><a title="Fighters" href="#">Fighters</a></li>
+                            <li><a title="Assassins" href="#">Assassins</a></li>
+                            <li><a title="Marksmen" href="#">Marksmen</a></li>
+                            <li><a title="Mages" href="#">Mages</a></li>
+                            <li><a title="Support" href="#">Support</a></li>
+                        </ul>
+                    </li>
+                    <li><a title="Tier List" href="#">Tier List</a></li>
+                </ul>
             </nav>
         </section>
         <img class="backgroundOne" alt="Background image" src="../images/back1.jpg">
@@ -68,18 +103,17 @@
 
     <main class="rechargeMain" role="main">
         <!-- left side information bar -->
-        <aside role="complementary" hidden>
+        <aside role="complementary">
             <img alt="Mobile Legends Logo" src="../images/ML_Logo.png">
             <h1>Mobile Legends</h1>
             <p>More products ⇒ <a href="#">Starlight Member Plus</a>, <a href="#">Twilight Pass</a>, <a href="#">Starlight Member</a>, <a href="#">Seasonal Starlight Member</a>, <a href="#">MPL-ID-S2 Avatar Border</a>, <a href="#">MPL-PH-S2 Avatar Border</a>, <a href="#">MPL-MY-SG-S2 Avatar Border</a>. 
             <p>Top-up Mobile Legends! Cross-platform payment solution for both iOS and Android.</p>
-            <p>Buy diamonds for Philippines and pay using Globe, Smart/SUN, GCash, Bank Transfer, 7-Eleven, Robinsons and Bayad centers. There's no credit card, registration or login required, and the diamonds will be added in your game account immediately after you complete the payment. It's the best way to buy diamonds online without a credit card!</p> 
 
             <p>Download Mobile Legends:Bang Bang now!</p>
 
             <section>
-                <img alt="Google Play Link" src="../images/en_badge_web_generic.png">
-                <img alt="App Store Link" src="../images/appStore.png">
+                <img class="googlePlay" alt="Google Play Link" src="../images/en_badge_web_generic.png">
+                <img class="iphone" alt="App Store Link" src="../images/appStore.png">
             </section>
         </aside>
 
@@ -99,8 +133,8 @@
 
                 <!-- Row 2 -->
                 <section class="userIDInputs">
-                    <input class="" type="text" name="idNum" value="ID#">
-                    <input class="" type="text" name="serverID" value="(                 )">
+                    <input id="id" type="text" name="idNum" value="ID#">
+                    <input id="serverID" type="text" name="serverID" value="(                 )">
                 </section>
             </fieldset>
 

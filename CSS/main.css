@@ -352,6 +352,7 @@ template {
 
 /* My CSS Starts Here */
 
+/* Global Values */
 h1 {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #FFF;
@@ -392,6 +393,7 @@ ul li {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5em;
   color: #FFF;
+  padding-bottom: 0.4em;
 }
 
 li ul {
@@ -407,6 +409,21 @@ img {
   max-width: 26.563em;
 }
 
+html {
+  margin: 0 auto;
+  max-width: 26.563em;
+}
+
+body {
+  text-align: center;
+  color: #FFF;
+}
+
+.header {
+  height: 13.750em;
+}
+
+/* Quality of Life */
 .row-one {
   grid-row: 1;
 }
@@ -449,26 +466,13 @@ img {
   grid-column-end: 4 span;
 }
 
-html {
-  margin: 0 auto;
-  max-width: 26.563em;
-}
-
-body {
-  text-align: center;
-  color: #FFF;
-}
-
-.header {
-  height: 13.750em;
-}
-
 .nav-container {
   background-color: #262c39;
   height: 2.813em;
   width: 100%;
 }
 
+/* Begin Header Section */
 .nav {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -512,6 +516,10 @@ body {
   width: 100%;
 }
 
+.menuNormal {
+  display: none;
+}
+
 #nav-toggle:checked ~ .menu {
   position: absolute;
   top: 45px;
@@ -521,6 +529,10 @@ body {
   background-color: #262c39;
   z-index: 1;
   max-width: 26.563em;
+}
+
+.login {
+  display: none;
 }
 
 .backgroundOne {
@@ -547,13 +559,19 @@ body {
   z-index: -1;
 }
 
+/* End Header Section */
+
 .main {
   margin: 0;
 }
 
+/* Begin Match Results Section */
+
 .line {
   grid-row: 1;
   grid-column: 1;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
   padding-top: 0.2em;
   overflow: hidden;
   text-align: center;
@@ -595,6 +613,18 @@ body {
   background-color: #7a78a1;
   box-shadow: 1px 1px 4px #222;
 }
+
+.resultTwo {
+  display: none;
+}
+
+.resultThree {
+  display: none;
+}
+
+/* End Results Section
+
+/* News Section */
 
 .newsLine {
   grid-row: 1;
@@ -689,18 +719,17 @@ body {
 }
 
 .subHeadliner2 img {
-  width: 150px;
+  width: 204px;
 }
 
+/* End eSport Section */
+
+/* Hero Guide Section */
 .heroGuides {
   padding-top: .5em;
   background-color: #4e5d9f;
   display: grid;
   grid-template-columns:1fr 1fr;
-}
-
-.heroContainer {
-  border: 0.063em solid #7a78a1;
 }
 
 .guideLine {
@@ -784,6 +813,10 @@ body {
   margin: 0;
 }
 
+/* End Hero Guide Section */
+
+/* Start Game Updates Section */
+
 .gameUpdates {
   padding-top: .5em;
   background-color: #4e5d9f;
@@ -831,7 +864,6 @@ body {
   margin-left: 0.2em;
   margin-right: 0.2em;
   background-color: #7a78a1;
-  max-width: 415px;
   box-shadow: 1px 1px 4px #222;
 }
 
@@ -844,6 +876,8 @@ body {
   background-color: #FFF;
   box-shadow: 1px 1px 4px #222 inset;
 }
+
+/* End Game Updates Section */
 
 .harithIMG {
   grid-column: 2;
@@ -859,16 +893,21 @@ footer {
 }
 
 footer a {
-  color: #4e5d9f;
+  color: orange;
 }
 
 
 /* Recharge Page Start */
 
+aside {
+  display: none;
+}
+
 .rechargeMain {
   padding-top: 2em;
   background-color: #38416e;
 }
+
 .userIDGrid {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -886,26 +925,37 @@ footer a {
   position: relative;
   bottom: 2em;
   width: 3em;
+  right: 10.2em;
 }
 
 .diamondIMG {
   position: relative;
-  left:1.4em;
-  bottom: 2em;
+  left:11.5em;
+  bottom: 7em;
   width:3em;
 }
 
 .userLabel {
   position: relative;
-  right: 0.5em;
+  right: 3.2em;
+  bottom: 2em;
 }
 
 .userIDInputs {
   position: relative;
-  bottom: 0.5em;
+  bottom: 5em;
   grid-row: 2;
   grid-column-start: 1;
   grid-column-end: 4 span;
+  margin-bottom: -4em;
+}
+
+#id {
+  width: 40%;
+}
+
+#serverID {
+  width:40%;
 }
 
 .selectRecharge {
@@ -919,13 +969,13 @@ footer a {
 .numIMGTwo {
   position: relative;
   bottom: 2em;
-  right: 4.4em;
+  right: 10.2em;
   width: 3em;
 }
 
 .rechargeLabel {
   position: relative;
-  left: 2em;
+  right: 2.7em;
   bottom: 2em;
 }
 
@@ -966,7 +1016,7 @@ footer a {
 
 .paymentLabel {
   position: relative;
-  right: 2em;
+  right: 2.7em;
   bottom: 2em;
 }
 
@@ -1017,6 +1067,7 @@ bottom: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   color: #FFF;
+  width: 84%;
 }
 
 .buyBtn {
@@ -1070,4 +1121,613 @@ bottom: 1em;
 
 .aboutHarith {
   background-color: #38416e;
+}
+
+/* About Us End */
+
+/* Tablet View */
+@supports (grid-area: auto) {
+
+  @media screen and (min-width: 48em) {
+    img {
+      max-width: 48em;
+    }
+
+    html {
+      max-width: 48em;
+    }
+
+    .nav {
+      grid-template-columns: auto 30em auto auto;
+    }
+
+    .header {
+      height: 21.5em;
+    }
+
+    /* remove mobile menu */
+    .mobile-menu {
+      display: none;
+    }
+
+    /* Enable Horizontal Menu */
+    .menu {
+      display: none;
+    }
+
+    .menuNormal {
+      display: inline;
+      grid-row: 1;
+      grid-column: 2;
+      padding: 0;
+      margin: 0;
+      padding-top: 0.45em;
+    }
+
+    .menuNormal a:hover {
+      color: orange;
+    }
+
+    .menuDivider {
+      font-family: 'Open Sans Condensed', sans-serif;
+      padding-left: .35em;
+      padding-right: .3em;
+      font-size: 0.9em;
+    }
+
+    ul li {
+      display: inline;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 1.5em;
+      color: #FFF;
+    }
+
+    .recharge {
+      grid-column: 3;
+    }
+
+    .profile {
+      grid-column: 4;
+    }
+
+    .backgroundOne {
+      height: 300px;
+    }
+
+    .backgroundTwo {
+      height: 360px;
+    }
+
+    /* start homepage */
+
+    .matches {
+      grid-template-columns: auto auto;
+    }
+
+    .line {
+      grid-column-start: 1;
+      grid-column-end: 2 span;
+    }
+
+    .resultTwo {
+      display: block;
+      margin-top: 1em;
+      margin-left: 0.3em;
+      margin-right: 0.3em;
+      grid-row: 2;
+      grid-column: 2;
+      background-color: #7a78a1;
+      box-shadow: 1px 1px 4px #222;
+    }
+
+    .newsHero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-image: url(../images/mainBackground.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-bottom: 0.5em;
+    }
+
+    .newsSection {
+      grid-column: 1;
+      background-color: transparent;
+    }
+
+    .headliner {
+      background-color: rgba(122, 120, 161, .7)
+    }
+
+    .subHeadliner1 {
+      background-color: rgba(122, 120, 161, .7)
+    }
+
+    .subHeadliner2 {
+      background-color: rgba(122, 120, 161, .7)
+    }
+
+    .subHeadliner2 img {
+      width: 204px;
+    }
+
+    .heroGuides {
+      grid-column: 2;
+      grid-template-rows: 3.4em 2.5em auto;
+      background-color: transparent;
+    }
+
+    .guideLine {
+      padding-bottom: 0;
+      padding-top: .04em;
+    }
+
+    .heroTitlebar {
+      background-color: rgba(122, 120, 161, .7);
+    }
+
+    .heroSelector {
+      background-color: rgba(122, 120, 161, .7);
+    }
+
+    .guideSelection {
+      background-color: rgba(122, 120, 161, .7);
+    }
+
+    .gameUpdates {
+      grid-template-columns: auto;
+    }
+
+    .updateLine {
+      grid-row: 1;
+      grid-column: 1;
+ 
+    }
+
+    .newsItem {
+      display: grid;
+      grid-column: 1;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 180px;
+    }
+
+    .updateIMG {
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    .newsIMG {
+      height: 180px;
+    }
+
+    .updateTxt {
+      grid-row: 1;
+      grid-column: 2;
+      text-align: left;
+      padding-left: 0.3em;
+    }
+
+    .googleContainer {
+      grid-column: 1;
+    }
+
+    .harithIMG {
+      grid-column: 1;
+      width: 25em;
+      z-index: 0;
+    }
+
+    /* end homepage */
+
+    /* start recharge page */
+    .rechargeMain {
+      display: grid;
+      grid-template-columns: 23em auto;
+      height: 51.875em;
+      margin-bottom: -15.5em;
+      background-image: url(../images/mainBackground.png);
+      background-size: cover;
+    }
+
+    aside {
+      font-family: 'Open Sans Condensed', sans-serif;
+      margin-left: 0.3em;
+      margin-right: 0.3em;
+      display: block;
+      grid-column: 1;
+      font-size: 1.2em; background-color: rgba(122, 120, 161, .5);
+    }
+
+    aside a {
+      color: orange;
+    }
+
+    .googlePlay {
+      width: 10em;
+    }
+
+    .iphone {
+      position: relative;
+      width: 8em;
+      height: 2.6em;
+      bottom: .62em;
+    }
+
+    form {
+      grid-column: 2;
+    }
+
+    .userIDGrid {
+      background-color: rgba(122, 120, 161, .5);
+    }
+
+    .diamondIMG {
+      left: 10.5em;
+      width: 4em;
+    }
+
+    .selectRecharge {
+      background-color: rgba(122, 120, 161, .5);
+    }
+
+    .selectPayment {
+      background-color: rgba(122, 120, 161, .5);
+    }
+
+    .enterEmail {
+      background-color: rgba(122, 120, 161, .5);
+    }
+
+    .rechargeHarith {
+      position: relative;
+      grid-column: 1;
+      width: 20em;
+      right: 14em;
+      top: 0.3em;
+    }
+    /* End Recharge */ 
+
+    /* Start About Us */
+
+    .aboutMain {
+      background-image: url(../images/mainBackground.png);
+      padding-bottom: 30em;
+      margin-bottom: -31.3em;
+    }
+
+    .aboutContainer {
+      background-color: rgba(122, 120, 161, .5);
+      display: grid;
+      grid-template-columns: 0.5em auto 0.5em;
+      height: 70%;
+    }
+
+    .aboutContent {
+      grid-column: 2;
+      margin-top: -3em;
+      font-size: 1.2em;
+    }
+
+    .moonLogo {
+      margin-top: -1.8em;
+    }
+
+    .aboutHarith {
+      position: relative;
+      width: 40em;
+      right: 4em;
+      background-color: transparent;
+    }
+
+    /* End About Us */
+  }
+}
+
+/* Desktop View */
+@supports (grid-area: auto) {
+
+  @media screen and (min-width: 64em) {
+    img {
+      max-width: 64em;
+    }
+
+    html {
+      max-width: 64em;
+    }
+
+    .nav {
+      grid-template-columns: auto 38em auto auto auto;
+    }
+
+    .header {
+      height: 27.5em;
+    }
+
+    /* remove mobile menu */
+    .mobile-menu {
+      display: none;
+    }
+
+    /* Enable Horizontal Menu */
+    .menu {
+      display: none;
+    }
+
+    .menuNormal {
+      display: inline;
+      grid-row: 1;
+      grid-column: 2;
+      padding: 0;
+      margin: 0;
+      padding-top: 0.45em;
+    }
+
+    .menuNormal a:hover {
+      color: orange;
+    }
+
+    .menuDivider {
+      font-family: 'Open Sans Condensed', sans-serif;
+      padding-left: .85em;
+      padding-right: .8em;
+      font-size: 0.9em;
+    }
+
+    .login {
+      padding-top: 0.45em;
+      display: block;
+      grid-column: 5;
+    }
+
+    .login a {
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 1.5em;
+      text-decoration: none;
+      color: #FFF;
+    }
+
+    .login a:hover {
+      color: orange;
+    }
+
+    ul li {
+      display: inline;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 1.5em;
+      color: #FFF;
+    }
+
+    .recharge {
+      grid-column: 3;
+    }
+
+    .profile {
+      grid-column: 4;
+    }
+
+    .backgroundOne {
+      height: 25em;
+    }
+
+    .backgroundTwo {
+      height: 28.75em;
+    }
+
+    /* Homepage Start */
+
+    .matches {
+      grid-template-columns: auto auto auto;
+    }
+
+    .line {
+      grid-column-start: 1;
+      grid-column-end: 3 span;
+    }
+
+    .resultTwo {
+      display: block;
+      margin-top: 1em;
+      margin-left: 0.3em;
+      margin-right: 0.3em;
+      grid-row: 2;
+      grid-column: 2;
+      background-color: #7a78a1;
+      box-shadow: 1px 1px 4px #222;
+    }
+
+    .resultThree {
+      display: block;
+      margin-top: 1em;
+      margin-left: 0.3em;
+      margin-right: 0.3em;
+      grid-row: 2;
+      grid-column: 3;
+      background-color: #7a78a1;
+      box-shadow: 1px 1px 4px #222;
+    }
+
+    .newsHero {
+      display: grid;
+      grid-template-columns: 5em 1fr 5em 1fr 5em;
+      background-image: url(../images/mainBackground.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-bottom: 0.5em;
+    }
+
+    .newsSection {
+      grid-column: 2;
+      background-color: transparent;
+    }
+
+    .headliner {
+      background-color: rgba(122, 120, 161, .7)
+    }
+
+    .subHeadliner1 {
+      background-color: rgba(122, 120, 161, .7)
+    }
+
+    .subHeadliner2 {
+      background-color: rgba(122, 120, 161, .7)
+    }
+
+    .subHeadliner2 img {
+      width: 204px;
+    }
+
+    .heroGuides {
+      grid-column: 4;
+      grid-template-rows: 3.4em 2.5em auto;
+      background-color: transparent;
+    }
+
+    .guideLine {
+      padding-bottom: 0;
+      padding-top: .04em;
+    }
+
+    .heroTitlebar {
+      background-color: rgba(122, 120, 161, .7);
+    }
+
+    .heroSelector {
+      background-color: rgba(122, 120, 161, .7);
+    }
+
+    .guideSelection {
+      background-color: rgba(122, 120, 161, .7)
+    }
+
+    .gameUpdates {
+      grid-template-columns: 5em 1fr 5em;
+    }
+
+    .updateLine {
+      grid-row: 1;
+      grid-column: 2;
+ 
+    }
+
+    .newsItem {
+      display: grid;
+      grid-column: 2;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 180px;
+    }
+
+    .updateIMG {
+      grid-row: 1;
+      grid-column: 1;
+    }
+
+    .newsIMG {
+      height: 180px;
+    }
+
+    .updateTxt {
+      grid-row: 1;
+      grid-column: 2;
+      text-align: left;
+      padding-left: 0.3em;
+    }
+
+    .googleContainer {
+      grid-column: 2;
+    }
+
+    .harithIMG {
+      grid-column: 1;
+      width: 30em;
+      z-index: 0;
+    }
+
+    /* End Homepage */
+
+    /* start recharge page */
+    .rechargeMain {
+      display: grid;
+      grid-template-columns: 2em 30em 1em auto 2em;
+      height: 51.875em;
+      margin-bottom: -26.5em;
+      background-image: url(../images/mainBackground.png);
+      background-size: cover;
+      padding-bottom: 4em;
+    }
+    
+    aside {
+      font-family: 'Open Sans Condensed', sans-serif;
+      margin-left: 0.3em;
+      margin-right: 0.3em;
+      display: block;
+      grid-column: 2;
+      font-size: 1.3em; background-color: rgba(122, 120, 161, .5);
+    }
+    
+    aside a {
+      color: orange;
+    }
+    
+    .googlePlay {
+      width: 10em;
+    }
+    
+    .iphone {
+      position: relative;
+      width: 8em;
+      height: 2.6em;
+      bottom: .62em;
+    }
+    
+    form {
+      grid-column: 4;
+    }
+    
+    .userIDGrid {
+      background-color: rgba(122, 120, 161, .5);
+    }
+
+    #id {
+      width: 38%;
+    }
+
+    #serverID {
+      width: 38%;
+    }
+    
+    .diamondIMG {
+      left: 10.5em;
+      width: 4em;
+    }
+    
+    .selectRecharge {
+      background-color: rgba(122, 120, 161, .5);
+    }
+    
+    .selectPayment {
+      background-color: rgba(122, 120, 161, .5);
+    }
+    
+    .enterEmail {
+      background-color: rgba(122, 120, 161, .5);
+    }
+
+    .emailInput {
+      width: 78%;
+    }
+    
+    .rechargeHarith {
+      position: relative;
+      grid-column: 1;
+      width: 30em;
+      right: 17em;
+      top: 4.2em;
+    }   
+    /* End Recharge */
+    
+    /* Start About Us */
+    .aboutHarith {
+      right: 12em;
+      top: 0.2em;
+    }
+  }
 }
